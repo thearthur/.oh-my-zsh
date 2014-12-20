@@ -6,7 +6,6 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="dpoggi"
-RPROMPT='${return_code} %{$fg[green]%}%*%{$reset_color%}'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -46,7 +45,7 @@ RPROMPT='${return_code} %{$fg[green]%}%*%{$reset_color%}'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git golang docker git-extras lein mvn python docker colored-man tmux lein)
+plugins=(git golang docker git-extras lein mvn python docker colored-man tmux lein zsh-syntax-highlighting)
 
 # User configuration
 
@@ -83,3 +82,7 @@ if [ -f ~/.env ]
 then
     source ~/.env
 fi
+
+ZSH_HIGHLIGHT_HIGHLIGHTERS+=(brackets pattern)
+ZSH_HIGHLIGHT_PATTERNS=('rm *-rf*' 'fg=white,bold,bg=red') 
+RPROMPT='${return_code} %{$fg[green]%}%*%{$reset_color%}'
