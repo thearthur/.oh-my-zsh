@@ -7,9 +7,12 @@ export ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="dpoggi"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 RPROMPT='${return_code} %{$fg[green]%}%*%{$reset_color%}'
 >>>>>>> b696d45c (add timestamps and leiningen plugin)
+=======
+>>>>>>> d0e310c5 (add zsh-syntax-hilighting)
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -49,7 +52,7 @@ RPROMPT='${return_code} %{$fg[green]%}%*%{$reset_color%}'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git golang docker git-extras lein mvn python docker tmux lein zsh-syntax-highlighting mosh archlinux kubectl)
+plugins=(git golang docker git-extras lein mvn python docker colored-man tmux lein zsh-syntax-highlighting mosh archlinux kubectl)
 
 # User configuration
 
@@ -87,6 +90,7 @@ then
     source ~/.env
 fi
 
+<<<<<<< HEAD
 eval $(envoy -p)
 
 # disable the annoying update question:
@@ -96,3 +100,8 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS+=(brackets pattern)
 ZSH_HIGHLIGHT_PATTERNS=('rm *-rf*' 'fg=white,bold,bg=red')
 PROMPT='%{$fg[magenta]%}%~ %{$fg[red]%}%(!.#.»)%{$reset_color%} '
 RPROMPT='${return_code} $(git_prompt_info) %{$fg[$NCOLOR]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%}:%{$fg[green]%}%*%{$reset_color%}'
+=======
+ZSH_HIGHLIGHT_HIGHLIGHTERS+=(brackets pattern)
+ZSH_HIGHLIGHT_PATTERNS=('rm *-rf*' 'fg=white,bold,bg=red')
+RPROMPT='${return_code} %{$fg[green]%}%*%{$reset_color%}'
+>>>>>>> d0e310c5 (add zsh-syntax-hilighting)
