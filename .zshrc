@@ -85,4 +85,5 @@ fi
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS+=(brackets pattern)
 ZSH_HIGHLIGHT_PATTERNS=('rm *-rf*' 'fg=white,bold,bg=red') 
-RPROMPT='${return_code} %{$fg[green]%}%*%{$reset_color%}'
+PROMPT='%{$fg[magenta]%}%~ %{$fg[red]%}%(!.#.»)%{$reset_color%} '
+RPROMPT='${return_code} $(git_prompt_info) %{$fg[$NCOLOR]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%}:%{$fg[green]%}%*%{$reset_color%}'
