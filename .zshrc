@@ -52,6 +52,7 @@ RPROMPT='${return_code} %{$fg[green]%}%*%{$reset_color%}'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
 plugins=(git golang docker git-extras lein mvn python docker colored-man tmux lein zsh-syntax-highlighting mosh archlinux kubectl)
 
 # User configuration
