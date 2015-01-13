@@ -14,7 +14,9 @@ rm ~/.emacs.d.bak -rf
 mv -f ~/.emacs.d ~/.emacs.d.bak
 #git clone git@github.com:thearthur/arthur-s-emacs-config ~/.emacs.d
 git clone https://github.com/thearthur/arthur-s-emacs-config.git ~/.emacs.d
-echo '{:user {:plugins [[cider/cider-nrepl "0.8.0-SNAPSHOT"]]}}' > ~/.lein/profiles.clj
+mkdir -p ~/.lein/
+sudo chown -R \$USER ~/.lein/
+echo '{:user {:plugins [[cider/cider-nrepl "0.9.0-SNAPSHOT"] [refactor-nrepl "0.2.1"]]}}' > ~/.lein/profiles.clj
 rm -rf ~/.oh-my-zsh.bak
 mv ~/.oh-my-zsh ~/.oh-my-zsh.bak
 #git clone --recursive git@github.com:thearthur/.oh-my-zsh ~/.oh-my-zsh/
