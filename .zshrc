@@ -91,7 +91,6 @@ then
     source ~/.env
 fi
 
-eval $(envoy -p)
 
 # disable the annoying update question:
 DISABLE_AUTO_UPDATE="true"
