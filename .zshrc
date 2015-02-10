@@ -83,6 +83,9 @@ then
     source ~/.env
 fi
 
+# disable the annoying update question:
+DISABLE_AUTO_UPDATE="true"
+
 ZSH_HIGHLIGHT_HIGHLIGHTERS+=(brackets pattern)
 ZSH_HIGHLIGHT_PATTERNS=('rm *-rf*' 'fg=white,bold,bg=red') 
 PROMPT='%{$fg[magenta]%}%~ %{$fg[red]%}%(!.#.»)%{$reset_color%} '
