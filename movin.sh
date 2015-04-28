@@ -23,4 +23,6 @@ mkdir -p ~/bin/
 ln -sf ~/.oh-my-zsh/movin.sh ~/bin/movin.sh
 sudo apt-get install -y zsh
 sudo chsh \$USER -s /bin/zsh
+ln -s /home/\$USER/.oh-my-zsh/.vimperatorrc ~/.vimperatorrc
+ln -s /home/\$USER/.oh-my-zsh/.vimperator ~/.vimperator
 EOF
