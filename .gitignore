@@ -10,3 +10,6 @@ log/
 # editor configs
 .vscode
 .idea
+.vimperator/info/default/history-search
+.vimperator/info/default/local-marks
+.vimperator/info/default/history-command
