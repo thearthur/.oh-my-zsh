@@ -1,3 +1,4 @@
+
 # function aws {
 #     docker run --rm \
 #            -e AWS_DEFAULT_REGION=us-east-1\

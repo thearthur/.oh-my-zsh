@@ -6,13 +6,6 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="dpoggi"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-RPROMPT='${return_code} %{$fg[green]%}%*%{$reset_color%}'
->>>>>>> b696d45c (add timestamps and leiningen plugin)
-=======
->>>>>>> d0e310c5 (add zsh-syntax-hilighting)
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
