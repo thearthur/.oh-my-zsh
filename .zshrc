@@ -85,7 +85,6 @@ then
     source ~/.env
 fi
 
-
 # disable the annoying update question:
 DISABLE_AUTO_UPDATE="true"
 
