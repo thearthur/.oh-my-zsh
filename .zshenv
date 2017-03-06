@@ -8,3 +8,7 @@ function aws {
          all jumanjiman/aws\
          "${@:1}"
 }
+
+export EDITOR="emacsclient -c "
+export ALTERNATE_EDITOR=emacs
+export SSH_ASKPASS="/usr/bin/qt4-ssh-askpass"
