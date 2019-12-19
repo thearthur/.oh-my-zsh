@@ -1,7 +1,5 @@
 # custom files
 custom/
-!custom/plugins/example
-!custom/example.zsh
 
 # temp files directories
 cache/
@@ -9,3 +7,4 @@ cache/
 .vimperator/info/default/local-marks
 .vimperator/info/default/history-command
 log/
+*.swp
