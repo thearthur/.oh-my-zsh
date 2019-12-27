@@ -45,12 +45,19 @@ ZSH_THEME="dpoggi"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+<<<<<<< HEAD
 
 plugins=(git golang docker git-extras lein mvn python docker colored-man tmux lein zsh-syntax-highlighting mosh archlinux kubectl)
 
 # User configuration
 
 
+=======
+plugins=(git golang docker git-extras lein mvn python docker tmux lein zsh-syntax-highlighting mosh archlinux kubectl)
+
+# User configuration
+
+>>>>>>> 6e150670 (remove old plugin)
 export PATH="/home/arthur/.local/bin:/home/arthur/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/bin/core_perl/"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -87,8 +94,6 @@ fi
 
 # disable the annoying update question:
 DISABLE_AUTO_UPDATE="true"
-
-ZSH_HIGHLIGHT_HIGHLIGHTERS+=(brackets pattern)
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS+=(brackets pattern)
 ZSH_HIGHLIGHT_PATTERNS=('rm *-rf*' 'fg=white,bold,bg=red')
