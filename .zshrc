@@ -51,7 +51,7 @@ plugins=(git golang docker git-extras lein mvn python docker tmux lein zsh-synta
 
 export PATH="/home/arthur/.local/bin:/home/arthur/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/bin/core_perl/"
 # export MANPATH="/usr/local/man:$MANPATH"
-
+export PATH="$PATH:/Users/aulfeldt/bin"
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -92,3 +92,4 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS+=(brackets pattern)
 ZSH_HIGHLIGHT_PATTERNS=('rm *-rf*' 'fg=white,bold,bg=red')
 PROMPT='%{$fg[magenta]%}%~ %{$fg[red]%}%(!.#.»)%{$reset_color%} '
 RPROMPT='${return_code} $(git_prompt_info) %{$fg[$NCOLOR]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%}:%{$fg[green]%}%*%{$reset_color%}'
+eval "$(/opt/homebrew/bin/brew shellenv)"
