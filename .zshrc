@@ -50,7 +50,7 @@ plugins=(git golang docker git-extras lein mvn python docker colored-man tmux le
 
 # User configuration
 
-export PATH="/home/arthur/.local/bin:/home/arthur/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/bin/core_perl/"
+export PATH="/home/arthur/.local/bin:/home/arthur/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/bin/core_perl/:/home/arthur/.nix-profile/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
