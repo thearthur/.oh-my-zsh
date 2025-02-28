@@ -1,0 +1,12 @@
+"3.9 (created: 2015/02/15 15:49:05)
+
+source! /home/arthur/.vimperatorrc.local
+
+autocmd LocationChange .*                             js modes.passAllKeys = false
+autocmd LocationChange mail\\.google\\.com            js modes.passAllKeys = true
+autocmd LocationChange www\\.google\\.com/calendar    js modes.passAllKeys = true
+autocmd LocationChange docs\\.google\\.com            js modes.passAllKeys = true
+autocmd LocationChange inbox\\.google\\.com            js modes.passAllKeys = true
+:set editor="~/.vimperator/xterm-emacs"
+
+" vim: set ft=vimperator:
